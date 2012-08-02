@@ -1,0 +1,22 @@
+<h1>Listing restaurants</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>No. of review</th>
+    <th>Average rating</th>
+    <th></th>
+  </tr>
+
+  <% @restaurants.each do |restaurant| %>
+    <tr>
+      <td><%= link_to restaurant.name, restaurant %></td>
+      <td><%= restaurant.no_of_review %></td>
+      <td><%= restaurant.average_rating %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Restaurant', new_restaurant_path %>

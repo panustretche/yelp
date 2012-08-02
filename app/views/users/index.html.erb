@@ -1,0 +1,24 @@
+<h1>Listing users</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>No. of review</th>
+    <th>Average rating</th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= link_to user.name, user %></td>
+    <td><%= user.email %></td>
+    <td><%= user.no_of_review %></td>
+    <td><%= user.average_rating %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New User', new_user_path %>

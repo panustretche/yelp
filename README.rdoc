@@ -1,0 +1,30 @@
+# Create user
+User.create!(:name=> 'Panu',:email=>'panu@gmail.com')
+User.create!(:name=> 'John',:email=>'john@gmail.com')
+User.create!(:name=> 'Dave',:email=>'dave@gmail.com')
+User.create!(:name=> 'David',:email=>'david@gmail.com')
+User.create!(:name=> 'Andrew',:email=>'andrew@gmail.com')
+User.create!(:name=> 'James',:email=>'james@gmail.com')
+User.create!(:name=> 'Eddy',:email=>'eddy@gmail.com')
+User.create!(:name=> 'Nikhil',:email=>'nikhil@gmail.com')
+User.create!(:name=> 'Jean',:email=>'jean@gmail.com')
+User.create!(:name=> 'Stuart',:email=>'stuart@gmail.com')
+
+# Create restaurant
+Restaurant.create!(:name=> 'Burger King')
+Restaurant.create!(:name=> 'Subway')
+Restaurant.create!(:name=> 'Sansai')
+Restaurant.create!(:name=> 'Mcdonald')
+Restaurant.create!(:name=> 'Korean BBQ')
+Restaurant.create!(:name=> 'Daily Queen')
+Restaurant.create!(:name=> 'Ramen Yamane')
+Restaurant.create!(:name=> 'Five Guys')
+Restaurant.create!(:name=> 'JJ Tempura')
+Restaurant.create!(:name=> 'Blue suhi')
+
+# Create review
+Review.create!(:comment=>'So yummy',:star_rating=>5,:restaurant_id=>2,:user_id=>1)
+Review.create!(:comment=>'Delicious',:star_rating=>3,:restaurant_id=>5,:user_id=>1)
+Review.create!(:comment=>'Nice place',:star_rating=>3,:restaurant_id=>5,:user_id=>2)
+Review.create!(:comment=>'Love this place',:star_rating=>3,:restaurant_id=>2,:user_id=>8)
+Review.create!(:comment=>'Chill out environment',:star_rating=>4,:restaurant_id=>10,:user_id=>3)

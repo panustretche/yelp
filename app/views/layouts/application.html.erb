@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yelp</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <ul style="width:100%;float:left;">
+    <li style="list-style-type: none;float:left;margin:0 20px 0 0;"><%= link_to 'Restaurants', restaurants_url %></li>
+    <li style="list-style-type: none;float:left;"><%= link_to 'Users', users_url %></li>
+  </ul>
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<h1>User: <%= @user.name %></h1>
+<p>Email: <%= @user.email %></p>
+
+<p>No. of review: <%= @reviews.count %></p>
+
+  <ul>
+  <% @reviews.each do |r| %>
+    <li>Restaurant: <%= link_to r.restaurant.name,restaurant_url(r.restaurant.id)%></li>
+    <li>Comment: <%=r.comment%></li>
+    <li>Rating: <%= pluralize(r.star_rating,'stars') %></li>
+    <br/>
+  <% end %>
+</ul>
+
+
+<%= link_to 'Back', users_path %>
